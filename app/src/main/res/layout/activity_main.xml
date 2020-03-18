@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/xlarge_dimen"
+        android:background="@drawable/bg_round_corner"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/large_dimen"
+            android:layout_marginTop="@dimen/large_dimen"
+            android:layout_marginRight="@dimen/large_dimen"
+            android:layout_weight="1.4"
+            android:background="@drawable/bg_black_round"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="@dimen/xxlarge_dimen"
+                android:layout_height="@dimen/small_dimen"
+                android:layout_marginTop="@dimen/normal_dimen"
+                android:background="@color/colorDarker" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/large_dimen"
+                android:text="@string/nokia"
+                android:textColor="@android:color/darker_gray" />
+
+
+            <include layout="@layout/screen_layout" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/large_dimen"
+            android:layout_marginRight="@dimen/large_dimen"
+            android:layout_marginBottom="@dimen/large_dimen"
+            android:layout_weight="1.6"
+            android:background="@color/colorDarker">
+
+            <include layout="@layout/keypad_layout" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
